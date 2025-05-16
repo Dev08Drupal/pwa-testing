@@ -1,0 +1,6 @@
+name: pwa-testing
+recipe: pantheon
+config:
+  framework: drupal8
+  site: pwa-testing
+  id: b876b297-6f13-470d-9b9f-6deab32b8aaa
