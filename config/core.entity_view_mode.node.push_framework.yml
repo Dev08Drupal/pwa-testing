@@ -1,0 +1,13 @@
+uuid: db520496-035e-4c1f-ae9d-2d0ea6494760
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: X5SmTV0OuZMDD9WWFellQp2iey7AL5UsZuJ6nI4VZNA
+id: node.push_framework
+label: 'Push Framework'
+description: 'Display mode for the alert messages sent by the Push Framework.'
+targetEntityType: node
+cache: true

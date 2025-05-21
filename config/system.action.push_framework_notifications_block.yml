@@ -1,0 +1,13 @@
+uuid: a953f585-c8d0-4dfc-aa97-b6ab72da05ce
+langcode: es
+status: true
+dependencies:
+  module:
+    - push_framework
+_core:
+  default_config_hash: rytON4BvYvl_El8I2zpslY1WaQjoX-nwfyFMYNtOs-w
+id: push_framework_notifications_block
+label: 'Block all push notifications'
+type: user
+plugin: push_framework_notifications_block
+configuration: {  }

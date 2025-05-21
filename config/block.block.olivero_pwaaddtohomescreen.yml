@@ -1,0 +1,24 @@
+uuid: 351e487a-e864-4331-8317-3c72cad83c4c
+langcode: es
+status: true
+dependencies:
+  module:
+    - pwa_a2hs
+  theme:
+    - olivero
+id: olivero_pwaaddtohomescreen
+theme: olivero
+region: header
+weight: 0
+provider: null
+plugin: pwa_add_to_home_screen
+settings:
+  id: pwa_add_to_home_screen
+  label: 'PWA Add to Home Screen'
+  label_display: visible
+  provider: pwa_a2hs
+  button_text: 'Install app'
+  intro_text:
+    value: ''
+    format: basic_html
+visibility: {  }

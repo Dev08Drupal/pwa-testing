@@ -1,0 +1,28 @@
+uuid: ac994d06-a6f3-4a91-a118-22b6f1812341
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.push_framework
+    - field.field.node.page.body
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: vDcR_14rIRus8bcj_bPfQLB0lux0EpiUllnk-144UcM
+id: node.page.push_framework
+targetEntityType: node
+bundle: page
+mode: push_framework
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true

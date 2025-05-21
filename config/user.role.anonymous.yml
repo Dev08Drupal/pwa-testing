@@ -9,6 +9,7 @@ dependencies:
     - contact
     - filter
     - media
+    - pwa
     - search
     - system
 _core:
@@ -20,6 +21,7 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access pwa'
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'

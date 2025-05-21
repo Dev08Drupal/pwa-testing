@@ -3,6 +3,7 @@ _core:
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  advancedqueue: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -13,6 +14,8 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  danse: 0
+  danse_content: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -38,11 +41,17 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  pf_notifications: 0
+  push_framework: 0
   pwa: 0
   pwa_a2hs: 0
   pwa_extras: 0
+  pwa_service_worker: 0
   responsive_image: 0
+  rest: 0
   search: 0
+  seckit: 0
+  serialization: 0
   settings_tray: 0
   shortcut: 0
   standard: 0

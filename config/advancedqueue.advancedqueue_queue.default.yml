@@ -1,0 +1,19 @@
+uuid: 9597aa5b-796c-47f3-819c-c6bee89ac7bb
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OvnOAdfIlTBUNwwsKaRCxbpoz2nKFau9I0zH1erhzSM
+id: default
+label: 'Por defecto'
+backend: database
+backend_configuration:
+  lease_time: 300
+processor: cron
+processing_time: 90
+locked: false
+stop_when_empty: true
+threshold:
+  type: 0
+  limit: 0
+  state: all

@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: d-VHybHiFzfm_ebwtVgF3iJ8737BeK015ybUO97kyvU
+display_modes:
+  node: push_framework
+pattern:
+  subject: '[site:name] notification: [push-object:label]'
+  body:
+    value: "[user:display-name],\r\n\r\n[push-object:content]"
+    format: plain_text

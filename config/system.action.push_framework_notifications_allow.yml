@@ -1,0 +1,13 @@
+uuid: 72bfa45d-3298-4d1a-ad2e-111ba92cf49e
+langcode: es
+status: true
+dependencies:
+  module:
+    - push_framework
+_core:
+  default_config_hash: SJ7Qhw8cnYQiR2zntay323UdLlOx0abkTaNxTCA1GSw
+id: push_framework_notifications_allow
+label: 'Allow all push notifications'
+type: user
+plugin: push_framework_notifications_allow
+configuration: {  }
