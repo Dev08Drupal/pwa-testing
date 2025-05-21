@@ -1,0 +1,20 @@
+uuid: 0880368b-da26-4e0b-96e9-f82d8ef481b8
+langcode: es
+status: true
+dependencies:
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: 1sWPVvYxMGhkamKnvLDWTUyNcxximSWDk1rSfBe1NZQ
+id: pwa_testing_page_title
+theme: pwa_testing
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }

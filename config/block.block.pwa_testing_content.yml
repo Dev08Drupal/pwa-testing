@@ -1,0 +1,22 @@
+uuid: 56b2e4da-c66c-4cd9-87b4-4764e3e030ff
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: W5piTVZpg0kZ5dydwW3TV6ZC3OdifIuE5oN1QOGheG4
+id: pwa_testing_content
+theme: pwa_testing
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

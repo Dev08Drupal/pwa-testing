@@ -1,0 +1,27 @@
+uuid: 5fec585a-30ad-4450-9f33-15c24259bb8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: xGVL985ll5J5ruQvKysqQ0f9oAEcSmxmaUL460VIq2s
+id: pwa_testing_account_menu
+theme: pwa_testing
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

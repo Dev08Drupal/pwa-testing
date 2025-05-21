@@ -1,0 +1,22 @@
+uuid: 7cddf374-5cb6-4243-844e-9e7c6b9b349f
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: RBm1_Aa4Xy8hTwjcf8X-H1qNAsv1MmQEODaVvB9-daM
+id: pwa_testing_help
+theme: pwa_testing
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

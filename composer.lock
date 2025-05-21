@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4d8657ae4af3c234c3b16aee5b3a3b2",
+    "content-hash": "3af2f88d78581492432b521feb5cc292",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1231,6 +1231,60 @@
             }
         },
         {
+            "name": "drupal/bootstrap_barrio",
+            "version": "5.5.19",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
+                "reference": "5.5.19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.5.19.zip",
+                "reference": "5.5.19",
+                "shasum": "636a96b4d9b1e8b055ec8925ff8b133e1cf11019"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11.0",
+                "twbs/bootstrap": "^5.0.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.5.19",
+                    "datestamp": "1733499138",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/827704",
+                    "email": "alberto@siles.pe"
+                },
+                {
+                    "name": "ricardo.castaneda",
+                    "homepage": "https://www.drupal.org/user/3520894"
+                },
+                {
+                    "name": "WillAcon",
+                    "homepage": "https://www.drupal.org/user/2824325"
+                }
+            ],
+            "description": "Bootstrap 5 base theme.",
+            "homepage": "https://www.drupal.org/project/bootstrap_barrio",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "11.1.7",
             "source": {
@@ -1662,6 +1716,83 @@
                     "url": "https://paypal.me/saschaeggi"
                 }
             ]
+        },
+        {
+            "name": "drupal/pwa",
+            "version": "2.1.0-beta7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pwa.git",
+                "reference": "2.1.0-beta7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pwa-2.1.0-beta7.zip",
+                "reference": "2.1.0-beta7",
+                "shasum": "78f48c3c2c4c46819d146416670f97021c80d9bf"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11",
+                "php": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0-beta7",
+                    "datestamp": "1738667492",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "AlexBorsody",
+                    "homepage": "https://www.drupal.org/user/473596"
+                },
+                {
+                    "name": "ambient.impact",
+                    "homepage": "https://www.drupal.org/user/1131532"
+                },
+                {
+                    "name": "anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "christophweber",
+                    "homepage": "https://www.drupal.org/user/281751"
+                },
+                {
+                    "name": "grevil",
+                    "homepage": "https://www.drupal.org/user/3668491"
+                },
+                {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                },
+                {
+                    "name": "rupl",
+                    "homepage": "https://www.drupal.org/user/411999"
+                }
+            ],
+            "description": "Provides progressive web app integration for your Drupal site.",
+            "homepage": "https://www.drupal.org/project/pwa",
+            "keywords": [
+                "Drupal",
+                "Handheld",
+                "Mobile",
+                "PWA",
+                "Progressive Web App"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/pwa",
+                "issues": "https://www.drupal.org/project/issues/pwa"
+            }
         },
         {
             "name": "drush/drush",
@@ -6259,6 +6390,56 @@
                 }
             ],
             "time": "2025-04-04T10:10:11+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v5.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "f849680d16a9695c9a6c9c062d6cff55ddcf071e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/f849680d16a9695c9a6c9c062d6cff55ddcf071e",
+                "reference": "f849680d16a9695c9a6c9c062d6cff55ddcf071e",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v5.3.6"
+            },
+            "time": "2025-05-05T19:21:55+00:00"
         },
         {
             "name": "twig/twig",
@@ -11928,6 +12109,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "drupal/pwa": 10,
         "pantheon-upstreams/upstream-configuration": 20
     },
     "prefer-stable": true,

@@ -1,0 +1,20 @@
+uuid: cc2965b2-fbe5-4bab-908f-d582d236e84b
+langcode: es
+status: true
+dependencies:
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: I9jzcPcjWTJz-N0EhaXhSq7C8rb6px7bGg9TwRrL9KA
+id: pwa_testing_primary_admin_actions
+theme: pwa_testing
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

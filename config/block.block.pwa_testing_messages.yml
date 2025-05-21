@@ -1,0 +1,22 @@
+uuid: 00e0d36b-c3d1-4fa1-a54b-e32eaf435f04
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: d3hQPvtXaiWOLnVk9Co2fBHtyBoUjw9RL02TOEh6p9k
+id: pwa_testing_messages
+theme: pwa_testing
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

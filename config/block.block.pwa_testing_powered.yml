@@ -1,0 +1,22 @@
+uuid: bbea955e-c477-4123-8a2d-cfd19bff5d48
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: sYod0N_fcQx97r8MxiYPFBGYCyvqrmRYZlsfU6qcZgw
+id: pwa_testing_powered
+theme: pwa_testing
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

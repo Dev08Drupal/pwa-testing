@@ -1,0 +1,27 @@
+uuid: 7a91ed7b-10d8-4d36-b6f0-bfb4ca1a9975
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: dG2vSrznTcw9gkIukqxXTgsysGT1H_Yd_B2fmbD_jYA
+id: pwa_testing_main_menu
+theme: pwa_testing
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: f19329c4-3d86-4820-b580-494246db41c6
+langcode: es
+status: true
+dependencies:
+  theme:
+    - pwa_testing
+_core:
+  default_config_hash: IuA8xdZl8pr6pc5aTTALjcGKYa6kCIGDOvi4O4nAlTU
+id: pwa_testing_secondary_local_tasks
+theme: pwa_testing
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas secundarias'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }
