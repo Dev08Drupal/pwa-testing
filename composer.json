@@ -47,7 +47,10 @@
             "file-mapping": {
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
-                "[project-root]/.gitattributes": false
+                "[project-root]/.gitattributes": false,
+                "[web-root]/.htaccess": {
+                    "append": "htaccess-additions.txt"
+                }
             }
         },
         "installer-paths": {

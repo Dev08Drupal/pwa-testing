@@ -183,9 +183,3 @@ AddType image/webp .webp
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
 </IfModule>
-
-# Allow access to manifest.json
-<Files "manifest.json">
-  Require all granted
-  Header set Content-Type "application/manifest+json"
-</Files>
