@@ -1,4 +1,4 @@
-uuid: 1f5c442c-db30-4675-a72c-ec69d39aeba1
+uuid: d83645c3-9d4b-45fd-993e-402d17c4c414
 langcode: es
 status: true
 dependencies:
@@ -9,13 +9,13 @@ dependencies:
 id: pwa_testing_pwaaddtohomescreen
 theme: pwa_testing
 region: top_header
-weight: -6
+weight: 0
 provider: null
 plugin: pwa_add_to_home_screen
 settings:
   id: pwa_add_to_home_screen
   label: 'PWA Add to Home Screen'
-  label_display: '0'
+  label_display: visible
   provider: pwa_a2hs
   button_text: 'Install app'
   intro_text:

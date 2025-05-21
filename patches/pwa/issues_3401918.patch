@@ -1,0 +1,107 @@
+--- /modules/pwa_a2hs/src/Plugin/Block/AddToHomeScreenBlock.php	2025-05-21 12:26:40.513368800 -0500
++++ /modules/pwa_a2hs/src/Plugin/Block/AddToHomeScreenBlock.php	2025-05-21 12:29:12.443763300 -0500
+@@ -14,26 +14,27 @@
+  *  category = @Translation("PWA"),
+  * )
+  */
+-class AddToHomeScreenBlock extends BlockBase {
+-
++class AddToHomeScreenBlock extends BlockBase
++{
+   /**
+    * {@inheritdoc}
+    */
+-  public function defaultConfiguration() {
++  public function defaultConfiguration()
++  {
+     return [
+       'button_text' => 'Install app',
+     ] + parent::defaultConfiguration();
+   }
+-
+   /**
+    * {@inheritdoc}
+    */
+-  public function blockForm($form, FormStateInterface $form_state) {
++  public function blockForm($form, FormStateInterface $form_state)
++  {
+     $form['intro_text'] = [
+       '#type' => 'text_format',
+       '#title' => $this->t('Introduction text'),
+-      '#format' => $this->configuration['intro_text']['format'],
+-      '#default_value' => $this->configuration['intro_text']['value'],
++      '#format' => isset($this->configuration['intro_text']['format']) ? $this->configuration['intro_text']['format'] : 'basic_html',
++      '#default_value' => isset($this->configuration['intro_text']['value']) ? $this->configuration['intro_text']['value'] : '',
+       '#weight' => '1',
+     ];
+     $form['button_text'] = [
+@@ -42,24 +43,24 @@
+       '#default_value' => $this->configuration['button_text'],
+       '#weight' => '2',
+     ];
+-
+     return $form;
+   }
+-
+   /**
+    * {@inheritdoc}
+    */
+-  public function blockSubmit($form, FormStateInterface $form_state) {
++  public function blockSubmit($form, FormStateInterface $form_state)
++  {
+     $this->configuration['intro_text'] = $form_state->getValue('intro_text');
+     $this->configuration['button_text'] = $form_state->getValue('button_text');
+   }
+-
+   /**
+    * {@inheritdoc}
+    */
+-  public function build() {
+-    return [
+-      '#attached' => [
++  public function build()
++  {
++    $build = [];
++    if (isset($this->configuration['button_text'])) {
++      $build['#attached'] = [
+         'library' => ['pwa_a2hs/pwa_a2hs_prompt'],
+         'drupalSettings' => [
+           'pwaA2hs' => [
+@@ -68,17 +69,25 @@
+             ],
+           ],
+         ],
+-      ],
+-      '#theme' => 'pwa_add_to_home_screen',
+-      '#intro_text' => [
+-        '#type' => 'processed_text',
+-        '#text' => $this->configuration['intro_text']['value'],
+-        '#format' => $this->configuration['intro_text']['format'],
+-      ],
+-      '#button_text' => [
+-        '#markup' => $this->configuration['button_text'],
+-      ],
+-    ];
+-  }
++      ];
+ 
++      $build['#theme'] = 'pwa_add_to_home_screen';
++
++      // Check if 'intro_text' key exists before accessing it
++      if (isset($this->configuration['intro_text']['value']) && isset($this->configuration['intro_text']['format'])) {
++        $build['#intro_text'] = [
++          '#type' => 'processed_text',
++          '#text' => $this->configuration['intro_text']['value'],
++          '#format' => $this->configuration['intro_text']['format'],
++        ];
++      }
++
++      if (isset($this->configuration['button_text'])) {
++        $build['#button_text'] = [
++          '#markup' => $this->configuration['button_text'],
++        ];
++      }
++    }
++    return $build;
++  }
+ }

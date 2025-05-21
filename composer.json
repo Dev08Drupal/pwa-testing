@@ -25,7 +25,8 @@
         "drupal/gin": "^4.0",
         "drupal/gin_toolbar": "^2.0",
         "drupal/bootstrap_barrio": "^5.5",
-        "drupal/pwa": "2.1.0-beta7"
+        "drupal/pwa": "2.1.0-beta7",
+        "drupal/twig_tweak": "^3.4"
     },
     "require-dev": {
         "drupal/core-dev": "^11"
@@ -63,7 +64,12 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "enable-patching": true
+        "enable-patching": true,
+        "patches": {
+            "drupal/pwa": {
+                "Issue #3401918": "patches/pwa/issues_3401918.patch"
+            }
+        }
     },
     "autoload": {
         "classmap": ["upstream-configuration/scripts/ComposerScripts.php"]
