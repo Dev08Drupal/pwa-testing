@@ -98,3 +98,8 @@
 
 # Ignore .env files as they are personal
 #/.env
+
+#Ignore node_modules
+/web/themes/custom/*/node_modules
+/web/themes/custom/*/package-lock.json
+/web/themes/custom/*/css/components/*/*.css.map

@@ -28,7 +28,10 @@
         "drupal/pwa": "2.1.0-beta7",
         "drupal/twig_tweak": "^3.4",
         "drupal/pf_notifications": "1.0.1-beta1",
-        "drupal/seckit": "^2.0"
+        "drupal/seckit": "^2.0",
+        "drupal/single_content_sync": "^1.4",
+        "drupal/paragraphs": "^1.19",
+        "drupal/entity_usage": "2.0-beta24"
     },
     "require-dev": {
         "drupal/core-dev": "^11"

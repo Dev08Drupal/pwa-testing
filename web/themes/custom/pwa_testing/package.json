@@ -1,0 +1,40 @@
+{
+  "name": "pwa_testing",
+  "version": "1.0.0",
+  "description": "Tema con carga atómica automatizada",
+  "scripts": {
+    "sass-dev": "sass --watch scss:css --style expanded --load-path=scss",
+    "sass-prod": "sass scss:css --style compressed --load-path=scss",
+    "compile-partials": "node compile-partials.js",
+    "postcss": "postcss css/*.css --use autoprefixer -d css/",
+    "postcss-components": "postcss css/components/**/*.css --use autoprefixer -d css/components/",
+    "build-libraries": "node build-libraries.js",
+    "build": "npm run sass-prod && npm run compile-partials && npm run postcss && npm run postcss-components && npm run build-libraries",
+    "clean": "rimraf css temp-partials",
+    "dev": "npm run clean && npm run sass-dev",
+    "dev-build": "npm run sass-prod && npm run compile-partials && npm run postcss && npm run postcss-components && npm run build-libraries",
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:sass": "sass --watch scss:css --style expanded --load-path=scss",
+    "watch:partials": "nodemon --watch scss/components --ext scss --exec \"npm run compile-partials\"",
+    "watch:libraries": "nodemon --watch css/components --ext css --exec \"npm run build-libraries\"",
+    "full-watch": "npm-run-all --parallel watch:sass watch:partials watch:libraries",
+    "setup": "npm install && npm run build",
+    "lint:scss": "stylelint 'scss/**/*.scss'",
+    "lint:css": "stylelint 'css/**/*.css'"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "autoprefixer": "^10.4.16",
+    "bootstrap": "^5.3.2",
+    "@popperjs/core": "^2.11.8",
+    "rimraf": "^5.0.5",
+    "js-yaml": "^4.1.0",
+    "npm-run-all": "^4.1.5",
+    "nodemon": "^3.0.2",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "chokidar": "^3.5.3"
+  }
+}

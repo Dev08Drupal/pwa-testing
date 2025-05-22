@@ -1,0 +1,31 @@
+uuid: 81152ea1-e84e-4c53-98c5-3ed5fa3876c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_principal.field_contenido
+    - node.type.pagina_principal
+  module:
+    - entity_reference_revisions
+    - user
+id: node.pagina_principal.default
+targetEntityType: node
+bundle: pagina_principal
+mode: default
+content:
+  field_contenido:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

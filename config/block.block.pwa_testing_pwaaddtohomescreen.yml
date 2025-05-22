@@ -15,7 +15,7 @@ plugin: pwa_add_to_home_screen
 settings:
   id: pwa_add_to_home_screen
   label: 'PWA Add to Home Screen'
-  label_display: visible
+  label_display: '0'
   provider: pwa_a2hs
   button_text: 'Install app'
   intro_text:
