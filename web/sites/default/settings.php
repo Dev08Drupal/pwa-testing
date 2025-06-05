@@ -32,3 +32,29 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+
+// Bypass automático para advertencia de Pantheon
+if (isset($_ENV['PANTHEON_ENVIRONMENT']) && $_ENV['PANTHEON_ENVIRONMENT'] === 'dev') {
+  // Si no existe la cookie y no es una request AJAX/API
+  if (!isset($_COOKIE['Deterrence-Bypass']) && !isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+    // Solo para requests normales de navegador
+    $user_agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    if (strpos($user_agent, 'Mozilla') !== false) {
+      setcookie('Deterrence-Bypass', '1', [
+        'expires' => time() + 86400,
+        'path' => '/',
+        'domain' => '.pantheonsite.io',
+        'secure' => true,
+        'httponly' => false,
+        'samesite' => 'Lax'
+      ]);
+
+      // Solo redirigir si no es manifest.json o service worker
+      $request_uri = $_SERVER['REQUEST_URI'] ?? '';
+      if (!in_array($request_uri, ['/manifest.json', '/service-worker-data', '/sw.js'])) {
+        header('Location: ' . $request_uri);
+        exit;
+      }
+    }
+  }
+}
