@@ -50,6 +50,7 @@ module:
   pwa_a2hs: 0
   pwa_extras: 0
   pwa_service_worker: 0
+  quicklink: 0
   responsive_image: 0
   rest: 0
   search: 0
@@ -63,6 +64,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   twig_tweak: 0
   update: 0

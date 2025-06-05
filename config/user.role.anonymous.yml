@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - rest.resource.pf_notifications_subscription
   module:
     - comment
     - contact
     - filter
     - media
     - pwa
+    - rest
     - search
     - system
 _core:
@@ -23,6 +25,7 @@ permissions:
   - 'access content'
   - 'access pwa'
   - 'access site-wide contact form'
+  - 'restful post pf_notifications_subscription'
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'

@@ -1,0 +1,11 @@
+uuid: dd426743-eb4d-4603-87ac-e9a1943d000b
+langcode: es
+status: true
+dependencies:
+  module:
+    - danse
+id: danse_notification.token
+label: Token
+description: null
+targetEntityType: danse_notification
+cache: true

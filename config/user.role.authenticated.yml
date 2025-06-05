@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - rest.resource.pf_notifications_subscription
   module:
     - comment
     - contact
@@ -11,6 +12,7 @@ dependencies:
     - filter
     - media
     - pwa
+    - rest
     - search
     - shortcut
     - system
@@ -28,6 +30,7 @@ permissions:
   - 'access site-wide contact form'
   - 'delete own files'
   - 'post comments'
+  - 'restful post pf_notifications_subscription'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'

@@ -1,0 +1,11 @@
+uuid: 76f70109-af16-4a87-8064-2978bd831038
+langcode: es
+status: true
+dependencies:
+  module:
+    - danse
+id: danse_event.token
+label: Token
+description: null
+targetEntityType: danse_event
+cache: true
