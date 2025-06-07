@@ -1,5 +1,6 @@
 .paragraph--type--text-image {
-  background-color: var(--gradient-1-step1);
+  background-color: light-dark(red, blue);
+  color: light-dark(blue, red);
   font-size: 1rem;
   width: 500px;
 }
