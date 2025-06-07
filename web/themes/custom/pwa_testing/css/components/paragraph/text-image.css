@@ -1,6 +1,1 @@
-.paragraph--type--text-image {
-  background-color: red;
-  font-size: 1rem;
-}
-
-/*# sourceMappingURL=text-image.css.map */
+.paragraph--type--text-image{background-color:var(--gradient-1-step1);font-size:1rem;width:500px}

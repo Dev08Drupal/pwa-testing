@@ -102,4 +102,7 @@
 #Ignore node_modules
 /web/themes/custom/*/node_modules
 /web/themes/custom/*/package-lock.json
+/web/themes/custom/*/css/*.css.map
 /web/themes/custom/*/css/components/*/*.css.map
+/web/themes/custom/*/js/dist/*.js.map
+/web/themes/custom/*/js/dist/components/*/*.js.map

@@ -1,19 +1,10 @@
-# Librerías del tema pwa_testing
-# 
-# SECCIÓN MANUAL: Las librerías definidas manualmente se preservan
-# SECCIÓN AUTO-GENERADA: Las librerías con prefijos (paragraph-, block-, view-, node-, form-) 
-# son generadas automáticamente por build-libraries.js
-#
-# Última generación automática: 2025-05-22T04:12:32.771Z
-
 global-styling:
   version: VERSION
   js:
-    js/global.js: {}
+    js/dist/main.min.js: {}
   css:
     component:
       css/style.css: {}
-      css/colors.css: {}
 bootstrap:
   js:
     /libraries/popper.js/dist/umd/popper.min.js:
@@ -42,7 +33,14 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
-paragraph-text-image:
+
+# Init library for paragraphs
+paragraph.text-image:
   css:
     theme:
       css/components/paragraph/text-image.css: {}
+  js:
+    js/dist/components/paragraph/text-image.min.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

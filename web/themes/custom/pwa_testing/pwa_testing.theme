@@ -14,7 +14,8 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Example on how to alter theme settings form
  */
-function pwa_testing_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+function pwa_testing_form_system_theme_settings_alter(&$form, FormStateInterface $form_state)
+{
   $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
     'bg-primary' => t('Primary'),
     'bg-secondary' => t('Secondary'),
@@ -33,39 +34,16 @@ function pwa_testing_form_system_theme_settings_alter(&$form, FormStateInterface
   ];
 }
 
-// ============================================================================
-// AUTO-GENERATED SECTION START - No editar manualmente
-// ============================================================================
-
-/**
- * Include auto-generated functions.
- */
-require_once __DIR__ . '/pwa_testing.auto-functions.php';
-
 /**
  * Implements hook_preprocess_paragraph() - Integración automática.
  */
-function pwa_testing_preprocess_paragraph(&$variables) {
-  // Llamar función automática si existe
-  if (function_exists('pwa_testing_auto_preprocess_paragraph')) {
-    pwa_testing_auto_preprocess_paragraph($variables);
-  }
-  
-  // Tu código manual para paragraphs puede ir aquí
-}
+function pwa_testing_preprocess_paragraph(&$variables)
+{
+  $paragraph = $variables['paragraph'];
 
-/**
- * Implements hook_preprocess_block() - Integración automática.
- */
-function pwa_testing_preprocess_block(&$variables) {
-  // Llamar función automática si existe
-  if (function_exists('pwa_testing_auto_preprocess_block')) {
-    pwa_testing_auto_preprocess_block($variables);
+  switch ($paragraph->bundle()) {
+    case 'text_image':
+      $variables['#attached']['library'][] = 'pwa_testing/paragraph.text-image';
+      break;
   }
-  
-  // Tu código manual para blocks puede ir aquí
 }
-
-// ============================================================================
-// AUTO-GENERATED SECTION END
-// ============================================================================

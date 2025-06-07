@@ -15,8 +15,8 @@ ip: null
 skip: 0
 title: '[push-object:op] "[push-object:label]" updates notifications!'
 body: 'Relevant updates on the current post will [push-object:op_push] notifications to your subscription in this browser/device - [push-object:client] 😎'
-icon: 'https://pwa-testing.com/themes/custom/pwa_testing/favicon.ico'
-url: 'https://pwa-testing.com/'
+icon: 'http://pwa-testing.com/themes/custom/pwa_testing/favicon.ico'
+url: 'http://pwa-testing.com/'
 subscribe: 1
 token_help: null
 status: null

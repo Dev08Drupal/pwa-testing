@@ -1,0 +1,349 @@
+/* Montserrat Font Faces */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Italic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Proxima Nova Font Faces */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova/proximanova_regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova/proximanova_light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova/proximanova_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova/proximanova_boldit.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova/proximanova_black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova/proximanova_blackit.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova/proximanova_extrabold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  // Dimensions
+  --xsWidth: 320px; /* Extra small devices like older smartphones */
+  --smWidth: 375px; /* Small smartphones (e.g., iPhone 6/7/8) */
+  --mdWidth: 480px; /* Medium smartphones (e.g., iPhone SE) */
+  --mdWidth: 768px; /* Tablets and small devices in portrait mode */
+  --xmdWidth: 992px; /* Tablets and small laptops in landscape mode */
+  --lgWidth: 1024px; /* Tablets and small laptops in landscape mode */
+  --xlWidth: 1280px; /* Desktop monitors */
+  --customWidth: 640px; /* Custom breakpoints for specific use cases */
+
+  // Commons
+  --gridGap: 10px;
+  --commonGap: 10px;
+  --commonBigGap: 20px;
+
+  // Structure
+  --MenuHeight: 94px;
+  // Max tamaño que tienen los elementos en el figma de la home propuesto por el cliente
+  --maxSiteWidth: 1458px;
+
+  // Fonts
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-md: 1rem;
+  --size-lg: 1.25rem;
+  --size-xlg: 1.375rem;
+  --size-xl: 1.563rem;
+  --size-xxl: 1.875rem;
+  --size-xxxl: 2.188rem;
+  --size-xxxxl: 2.813rem;
+  --size-xxxxxl: 4.063rem;
+
+  --commonFontFamily: "Montserrat", sans-serif;
+  --commonFontSizeMenu: var(--size-xs);
+  --commonFontSize: var(--size-sm);
+  --commonForeColor: var(--third-500);
+  --commonGrayColor: var(--neutral-800);
+  --commonFontRegularWeight: 500;
+  --commonFontSemiBoldWeight: 600;
+  --commonFontBoldWeight: 700;
+  --commonFontExtraBoldWeight: 900;
+
+  --secondaryFontFamily: "Proxima Nova", sans-serif;
+
+  /* COLOR TOKENS */
+
+  /* Primary colors */
+  // Primary - Green
+  --primary-50: #eaf7f8;
+  --primary-100: #d5eef3;
+  --primary-200: #abdee6;
+  --primary-300: #81ced9;
+  --primary-400: #57becc;
+  --primary-500: #2eaec1;
+  --primary-600: #006572;
+  --primary-650: #415f72;
+  --primary-700: #18252c;
+  --primary-800: #062939;
+  --primary-900: #111c21;
+
+  // Secondary - Orange
+  --secondary-50: #fdf1e9;
+  --secondary-100: #fbe3d2;
+  --secondary-200: #f8c8a6;
+  --secondary-300: #f4ad7a;
+  --secondary-400: #f1924d;
+  --secondary-500: #ee7722;
+  --secondary-600: #ff5400;
+  // Third - dark blue
+  --third-50: #e6e9ed;
+  --third-100: #cbd3dc;
+  --third-200: #9aa7b9;
+  --third-300: #667b96;
+  --third-400: #354f73;
+  --third-500: #032350;
+  // Third - light blue
+  --third-light-50: #fcfdfd;
+  --third-light-100: #f9fbfb;
+  --third-light-200: #f4f7f7;
+  --third-light-300: #eef3f4;
+  --third-light-400: #eaeff0;
+  --third-light-500: #e4ebed;
+  --third-light-700: #b7dbf2;
+
+  // White
+  --white-100: #fff;
+  --white-200: #f9f9f9;
+
+  // Blacks
+  --black-900: #000;
+  --black-800: #0f151a;
+  --black-700: #0b1014;
+  --black-600: #171717;
+
+  // Error
+  --error-100: #e63946;
+  --error-200: #f5c6cb;
+  --error-300: #f8d7da;
+  --error-400: #9d1313;
+  --error-500: #721c24;
+
+  //Success
+  --success-200: #c3e6cb;
+  --success-300: #d4edda;
+  --success-500: #155724;
+  //Warning
+  --warning-200: #ffeeba;
+  --warning-300: #fff3cd;
+  --warning-500: #856404;
+
+  // Neutrals
+  --neutral-100: #f9f9f9;
+  --neutral-200: #f5f5f5;
+  --neutral-300: #e5e5e5;
+  --neutral-400: #dbdbdb;
+  --neutral-500: #bbb;
+  --neutral-600: #888;
+  --neutral-700: #6b6b6b;
+  --neutral-800: #555;
+  --neutral-900: #272727;
+
+  /* Secondary colors */
+  // Gradient 1
+  --gradient-1-step1: #01055d;
+  --gradient-1-step2: #2eaec1;
+  // Gradient 2
+  --gradient-2-step1: #de1bfa;
+  --gradient-2-step2: #1875c0;
+  // Gradient 3
+  --gradient-3-step1: #fb8900;
+  --gradient-3-step2: #2eaec1;
+  // Gradient 4
+  --gradient-4-step1: #fb8900;
+  --gradient-4-step2: #6026ff;
+  // Gradient 5
+  --gradient-5-step1: #e016fa;
+  --gradient-5-step2: #0076bf;
+  /* END OF COLOR TOKENS */
+
+  // Input Placeholder
+  --input-placeholder: var(--neutral-500);
+
+  // Borders
+  --border-default: var(--neutral-400);
+  --border-banks: var(--neutral-300);
+  --border-radius-sm: 3px;
+  --border-radius-md: 6px;
+  --border-radius-slg: 10px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 28px;
+  --border-radius-round: 50px;
+
+  // effects
+  --box-shadow-b-sm: 0 2px 0 0 rgba(0, 90, 110, 0.3);
+  --box-shadow-b-md: 3px 3px 6px rgba(0, 0, 0, 0.15);
+  --box-shadow-b-lg: 0px 3px 4px var(--neutral-400);
+  --box-shadow-centered: 0px 0px 6px rgb(0, 0, 0, 16%);
+  --box-shadow-primary-centered: 0px 0px 6px var(--primary-400);
+
+  // Buttons
+  --buttonFontSize: var(--size-md);
+  --buttonRadius: var(--border-radius-xl);
+  --buttonRoundRadius: var(--border-radius-round);
+  /* Primary Button */
+  --btnPrimaryBg: var(--primary-400);
+  --btnPrimaryColor: var(--white-100);
+  --btnPrimaryHoverBg: var(--primary-600);
+  --btnPrimaryActiveBg: var(--primary-700);
+  --btnPrimaryFocusBg: var(--primary-300);
+  /* Primary Reverse */
+  --btnPrimaryReverseBg: var(--white-100);
+  --btnPrimaryReverseColor: var(--primary-400);
+  --btnPrimaryReverseBorder: var(--primary-400);
+  --btnPrimaryReverseHoverBg: var(--primary-400);
+  --btnPrimaryReverseHoverColor: var(--white-100);
+  --btnPrimaryReverseActiveBg: var(--primary-700);
+  --btnPrimaryReverseFocusBg: var(--primary-600);
+  /* Secondary Button */
+  --btnSecondaryBg: var(--secondary-500);
+  --btnSecondaryColor: var(--white-100);
+  --btnSecondaryHoverBg: var(--secondary-600);
+  --btnSecondaryActiveBg: var(--secondary-400);
+  --btnSecondaryFocusBg: var(--secondary-400);
+  /* Secondary Reverse */
+  --btnSecondaryReverseBg: var(--white-100);
+  --btnSecondaryReverseColor: var(--secondary-500);
+  --btnSecondaryReverseBorder: var(--secondary-500);
+  --btnSecondaryReverseHoverBg: var(--secondary-500);
+  --btnSecondaryReverseHoverColor: var(--white-100);
+  --btnSecondaryReverseActiveBg: var(--secondary-600);
+  --btnSecondaryReverseFocusBg: var(--secondary-600);
+  /* Delete button */
+  --btnDeleteBg: var(--error-100);
+  --btnDeleteColor: #ffffff;
+  --btnDeleteHoverBg: var(--error-400);
+  --btnDeleteActiveBg: var(--error-500);
+  --btnDeleteFocusBg: var(--error-500);
+  /* Delete button Reverse */
+  --btnDeleteReverseBg: #ffffff;
+  --btnDeleteReverseColor: var(--error-100);
+  --btnDeleteReverseBorder: var(--error-100);
+  --btnDeleteReverseHoverBg: var(--error-100);
+  --btnDeleteReverseHoverColor: #ffffff;
+  --btnDeleteReverseActiveBg: var(--secondary-600);
+  --btnDeleteReverseFocusBg: var(--secondary-600);
+  /* Delete Link */
+  --linkDeleteColor: var(--error-400);
+  --linkDeleteHoverColor: var(--error-500);
+
+  // Menu
+  --menu-item-hover: rgba(0, 171, 200, 0.65);
+  --menu-list-hover: rgba(45, 155, 174, 0.9);
+
+  // Paths
+  --commonAngularAppsBasePath: "/apps";
+
+  // Assignments to entities
+  --colorCountryBanks: var(--white-100);
+  --colorBorderBanks: var(--neutral-300);
+}
