@@ -63,6 +63,7 @@ WORKDIR /app
 COPY composer.json composer.lock* ./
 COPY upstream-configuration ./upstream-configuration
 COPY patches ./patches
+COPY htaccess-additions.txt ./
 
 # Instalar dependencias de Composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
