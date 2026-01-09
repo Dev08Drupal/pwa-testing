@@ -106,3 +106,9 @@
 /web/themes/custom/*/css/components/*/*.css.map
 /web/themes/custom/*/js/dist/*.js.map
 /web/themes/custom/*/js/dist/components/*/*.js.map
+
+# Ignore local ddev config files
+/.ddev/
+
+# Ignore vscode config files
+/.vscode/
