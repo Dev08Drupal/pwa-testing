@@ -59,13 +59,24 @@ RUN { \
 # Configurar directorio de trabajo
 WORKDIR /app
 
-# Copiar archivos del proyecto
+# Copiar composer files primero para aprovechar cache de Docker
+COPY composer.json composer.lock* ./
+
+# Instalar dependencias de Composer
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
+
+# Copiar el resto de los archivos del proyecto
 COPY . /app/
 
-# Establecer permisos
-RUN chown -R www-data:www-data /app/web/sites /app/web/modules /app/web/themes \
-    && mkdir -p /app/web/sites/default/files \
-    && chmod -R 755 /app/web/sites/default/files
+# Ejecutar scripts post-install de Composer
+RUN composer run-script post-install-cmd --no-interaction || true
+
+# Crear directorios necesarios y establecer permisos
+RUN mkdir -p /app/web/sites/default/files \
+    && mkdir -p /app/web/sites/default/files/tmp \
+    && mkdir -p /app/web/sites/default/files/private \
+    && chown -R www-data:www-data /app/web/sites/default/files \
+    && chmod -R 775 /app/web/sites/default/files
 
 # Exponer puerto
 EXPOSE 80

@@ -1,0 +1,65 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# DDEV
+.ddev
+
+# VSCode
+.vscode
+
+# IDE
+.idea
+
+# Documentación
+*.md
+!README.md
+RENDER_DEPLOYMENT.md
+
+# Archivos locales
+.env
+.env.local
+render.yaml.local
+
+# Node modules si los hay
+node_modules
+npm-debug.log
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Backups
+*.bak
+*.backup
+
+# Archivos de base de datos locales
+*.sql
+*.sqlite
+
+# Archivos de Pantheon
+pantheon.yml
+pantheon.upstream.yml
+
+# Lando
+.lando.yml
+
+# Composer local (NO excluir, necesario para Drupal)
+# vendor/
+# composer.lock
+
+# Web - archivos generados
+web/sites/*/files/*
+web/sites/*/private/*
+web/sites/simpletest
+
+# Config de DDEV
+web/sites/default/settings.ddev.php
