@@ -59,8 +59,9 @@ RUN { \
 # Configurar directorio de trabajo
 WORKDIR /app
 
-# Copiar composer files primero para aprovechar cache de Docker
+# Copiar composer files y upstream-configuration (requerido por Pantheon)
 COPY composer.json composer.lock* ./
+COPY upstream-configuration ./upstream-configuration
 
 # Instalar dependencias de Composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
