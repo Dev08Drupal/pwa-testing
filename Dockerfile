@@ -59,9 +59,10 @@ RUN { \
 # Configurar directorio de trabajo
 WORKDIR /app
 
-# Copiar composer files y upstream-configuration (requerido por Pantheon)
+# Copiar archivos necesarios para composer install
 COPY composer.json composer.lock* ./
 COPY upstream-configuration ./upstream-configuration
+COPY patches ./patches
 
 # Instalar dependencias de Composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
