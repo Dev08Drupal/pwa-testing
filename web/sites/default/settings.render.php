@@ -15,11 +15,11 @@ if (getenv('RENDER') === 'true') {
     $db_parts = parse_url($database_url);
 
     $databases['default']['default'] = [
-      'database' => ltrim($db_parts['path'], '/'),
-      'username' => $db_parts['user'],
-      'password' => $db_parts['pass'],
-      'host' => $db_parts['host'],
-      'port' => $db_parts['port'],
+      'database' => isset($db_parts['path']) ? ltrim($db_parts['path'], '/') : 'drupal',
+      'username' => isset($db_parts['user']) ? $db_parts['user'] : 'drupal',
+      'password' => isset($db_parts['pass']) ? $db_parts['pass'] : '',
+      'host' => isset($db_parts['host']) ? $db_parts['host'] : 'localhost',
+      'port' => isset($db_parts['port']) ? $db_parts['port'] : 5432,
       'driver' => 'pgsql',
       'prefix' => '',
       'collation' => 'utf8mb4_general_ci',

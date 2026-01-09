@@ -14,6 +14,16 @@ if (empty(\$dsn)) {
 echo 'DATABASE_URL configurada correctamente\n';
 "
 
+# Descargar archivos si FILES_BACKUP_URL está configurada
+if [ ! -z "$FILES_BACKUP_URL" ] && [ ! -f "/app/web/sites/default/files/.downloaded" ]; then
+    echo "Descargando archivos desde backup..."
+    bash /app/scripts/download-files.sh
+
+    # Marcar como descargado para no hacerlo en cada reinicio
+    touch /app/web/sites/default/files/.downloaded
+    echo "Archivos descargados exitosamente"
+fi
+
 # Ejecutar actualizaciones de Drupal si existen
 if [ -f "vendor/bin/drush" ]; then
     echo "Ejecutando actualizaciones de base de datos..."
