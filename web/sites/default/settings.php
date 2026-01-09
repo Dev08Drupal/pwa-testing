@@ -38,3 +38,11 @@ $ddev_settings = __DIR__ . '/settings.ddev.php';
 if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
   require $ddev_settings;
 }
+
+/**
+ * Include Render.com specific settings
+ */
+$render_settings = __DIR__ . '/settings.render.php';
+if (getenv('RENDER') === 'true' && file_exists($render_settings)) {
+  include_once $render_settings;
+}

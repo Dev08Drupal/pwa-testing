@@ -112,3 +112,7 @@
 
 # Ignore vscode config files
 /.vscode/
+
+# Ignore Render.com local files
+/.env
+/render.yaml.local
