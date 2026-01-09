@@ -767,13 +767,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              digital_signage: '0'
-              editor: '0'
-              manager: '0'
-              administrator: '0'
-              gastronomy: '0'
-              helpdesk: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -813,13 +806,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              digital_signage: '0'
-              editor: '0'
-              manager: '0'
-              administrator: '0'
-              gastronomy: '0'
-              helpdesk: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -859,13 +845,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              digital_signage: '0'
-              editor: '0'
-              manager: '0'
-              administrator: '0'
-              gastronomy: '0'
-              helpdesk: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -905,13 +884,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              digital_signage: '0'
-              editor: '0'
-              manager: '0'
-              administrator: '0'
-              gastronomy: '0'
-              helpdesk: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -951,13 +923,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              digital_signage: '0'
-              editor: '0'
-              manager: '0'
-              administrator: '0'
-              gastronomy: '0'
-              helpdesk: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -996,13 +961,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              digital_signage: '0'
-              editor: '0'
-              manager: '0'
-              administrator: '0'
-              gastronomy: '0'
-              helpdesk: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -1041,13 +999,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              digital_signage: '0'
-              editor: '0'
-              manager: '0'
-              administrator: '0'
-              gastronomy: '0'
-              helpdesk: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -1086,13 +1037,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              digital_signage: '0'
-              editor: '0'
-              manager: '0'
-              administrator: '0'
-              gastronomy: '0'
-              helpdesk: '0'
           is_grouped: false
           group_info:
             label: ''
